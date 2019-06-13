@@ -5,22 +5,21 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
+      marginTop: `0rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `0.45rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, textAlign: `center` }}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
           }}
         >
@@ -31,7 +30,9 @@ const Header = ({ siteTitle }) => (
   </header>
 )
 
-Header.propTypes = {
+//www.giphy.com/gifs/PlyhKoOoFMqks7r7gc
+
+http: Header.propTypes = {
   siteTitle: PropTypes.string,
 }
 
