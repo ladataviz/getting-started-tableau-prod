@@ -10,9 +10,6 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
-import Row from "react-bootstrap/Row"
-import Container from "react-bootstrap/Container"
-import Col from "react-bootstrap/Col"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,7 +25,6 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header />
-
         <div
           style={{
             margin: `0 auto`,
@@ -37,13 +33,14 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-            <a href="https://www.freepik.com/free-photos-vectors/frame">
-              Frame psd created by rawpixel.com - www.freepik.com
-            </a>
+          <footer
+            style={{
+              fontSize: "12px",
+              textAlign: "right",
+            }}
+          >
+            ©LaDataViz {new Date().getFullYear()}, Built with
+            <a href="https://www.gatsbyjs.org"> Gatsby</a>
           </footer>
         </div>
       </>

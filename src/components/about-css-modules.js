@@ -1,6 +1,6 @@
 import React from "react"
 import "./about-css-modules.module.css"
-import Container from "../components/container"
+import Container from "./container"
 
 const User = props => (
   <div className="user">

@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row"
 
 export default props => (
   <Row className="justify-content-md-center" style={{ padding: "0 10%" }}>
-    <Col
+    {/* <Col
       style={{
         position: "relative",
         top: "50%",
@@ -19,8 +19,9 @@ export default props => (
       >
         <i>{props.text}</i>
       </h2>
-    </Col>
+    </Col> */}
     <Col
+      md={12}
       style={{
         position: "relative",
         top: "50%",
@@ -28,7 +29,16 @@ export default props => (
         textAlign: "center",
       }}
     >
-      <img style={{ height: "290px", margin: "0" }} src={props.gif} />
+      <img style={{ maxHeight: "290px", margin: "0" }} src={props.gif} />
+    </Col>
+    <Col
+      md={12}
+      style={{
+        margin: "auto auto",
+        textAlign: "center",
+      }}
+    >
+      <p>{props.text}</p>
     </Col>
   </Row>
 )

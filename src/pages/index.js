@@ -37,7 +37,9 @@ const IndexPage = () => (
           <p>
             <i>The most up-to-date Tableau book you can find!</i>
           </p>
-          <Button>Purchase</Button>
+          <Button href="https://www.packtpub.com/eu/big-data-and-business-intelligence/getting-started-tableau-20192-second-edition">
+            Purchase
+          </Button>
         </Col>
       </Row>
     </Container>
@@ -65,7 +67,7 @@ const IndexPage = () => (
             updated with new functionalities and features. The latest release,
             Tableau 2019.2, promises new and advanced features related to visual
             analytics, reporting, dashboarding, and a host of other data
-            visualization aspects.{" "}
+            visualization aspects.
             <strong>Getting Started with Tableau 2019.2</strong> will get you up
             to speed with these additional functionalities.
           </p>
@@ -111,24 +113,50 @@ const IndexPage = () => (
             </li>
           </ul>
         </Col>
-        <h4 style={{ padding: "40px 20%", textAlign: "center" }}>
+        <h5 style={{ padding: "40px 20%", textAlign: "center" }}>
           <strong>
-            By the end of this book, you will be able to use Tableau effectively
-            to create quick, cost-effective, and business-efficient visual
-            solutions.
+            By the end of this book, you will be able to use Tableau to create
+            quick, cost-effective, and business-efficient visual solutions.
           </strong>
-        </h4>
+        </h5>
       </Row>
     </Container>
     <Container
       style={{
-        paddingTop: "100px",
+        paddingTop: "50px",
         paddingBottom: "100px",
         margin: "0",
         maxWidth: "100%",
         backgroundColor: "#fafafa",
       }}
     >
+      <h1
+        style={{
+          textAlign: "left",
+          paddingLeft: "100px",
+        }}
+      >
+        <strong>Chapter Highlight</strong>
+      </h1>
+      <h4
+        style={{
+          textAlign: "left",
+          paddingLeft: "100px",
+        }}
+      >
+        <i> Chapter 3: Getting Started With Tableau</i>
+      </h4>
+      <p
+        style={{
+          textAlign: "left",
+          paddingLeft: "100px",
+          paddingBottom: "50px",
+        }}
+      >
+        In only 15 pages, you'll learn the three main ways of using Tableau
+        Desktop: <br /> Build visualizations, create a dashboard and explore
+        your data.
+      </p>
       <Feature
         gif={vizgif}
         text="Visualize your data while playing with Tableau"
@@ -168,7 +196,7 @@ const IndexPage = () => (
               right: "0",
               margin: "auto auto",
               width: "80%",
-              maxWidth: "70%",
+              maxWidth: "500px",
             }}
             src={picme}
           />
